@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Emotion Assistant - Prototype</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 16px; }
+    #video { width: 320px; height: 240px; background: #000; }
+    #status { margin-top: 8px; }
+    button { margin: 6px; padding: 8px 12px; }
+    .bubble { margin-top:8px; padding:8px; background:#f1f1f1; border-radius:6px; width:320px; }
+  </style>
+</head>
+<body>
+  <h2>Emotion Assistant (prototype)</h2>
+  <video id="video" autoplay playsinline></video><br/>
+  <div>
+    <button id="btnCapture">Capture & Analyze</button>
+    <button id="btnStartAuto">Start Auto (every 3s)</button>
+    <button id="btnStopAuto">Stop Auto</button>
+    <button id="btnListen">Talk (browser ASR)</button>
+    <button id="btnBreath">Start Breathing (TTS)</button>
+  </div>
+  <div id="status">Status: idle</div>
+  <div id="result" class="bubble">Emotion: —</div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
